@@ -1,7 +1,8 @@
 /node_modules
 /public/hot
 /public/storage
-/public/index.
+/public/index.php
+/public/sdfsdfsdf.php
 /storage/*.key
 /vendor
 .env
