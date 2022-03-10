@@ -1,0 +1,15 @@
+# 500 inrternal server error
+# 501 not implemented 
+# 503 server unabaible
+
+# 400  bad request
+# 401 unautorized
+$ 402 payment requird
+# 403 forbidden
+# 404 not found -> ex => /users/2022 notFound
+# 405 method not allowed
+
+
+# 200 response oK
+# 201 create 
+# 202 accepted
