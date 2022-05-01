@@ -28,25 +28,23 @@ class RouteServiceProvider extends ServiceProvider
     {
         $this->configureRateLimiting();
 
-        $this ->map() ;
     }
 
     public function map()
     {
-        $this->routes(function () {
             $this->mapApiUserRoutes();
             $this->mapApiAdminRoutes();
             $this->mapApiRoutes();
             $this->mapWebRoutes();
-        }) ;
+
     }
 
 
 
     protected function mapApiUserRoutes(){
-        Route::prefix('api/user')
+        Route::middleware('api')
+            ->prefix('api/user')
             ->name("api.user")
-            ->middleware('api')
             ->namespace($this->namespace)
             ->group(base_path('routes/api/user.php'));
 

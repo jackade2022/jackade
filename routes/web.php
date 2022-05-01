@@ -15,8 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+Route::any('test' , function (){
+    dd( User::first() );
+}) ;
+
 Route::get('/', function () {
-    return view('welcome');
+    dd(423423) ;
 });
 
 
